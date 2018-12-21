@@ -23,6 +23,7 @@ mkdir build
 cd build/
 ../configure --prefix=$prefix --with-pic --disable-pkg-config --host=${target} --enable-shared --disable-static \
 --enable-dependency-linking lt_cv_deplibs_check_method=pass_all \
+--enable-cbc-parallel \
 --with-cgl-lib="-L${prefix}/lib -lCgl" --with-cgl-incdir="$prefix/include/coin" \
 --with-asl-lib="-L${prefix}/lib -lasl" --with-asl-incdir="$prefix/include/asl" \
 --with-blas="-L${prefix}/lib -lcoinblas" \
